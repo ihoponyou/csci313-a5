@@ -1,6 +1,5 @@
-<h2>My Heroes</h2>
 <div>
-  <input id="new-hero" #heroName placeholder="Hero name"/>
+  <input id="new-hero" #heroName placeholder="Hero name" />
 
   <!-- (click) passes input value to add() and then clears the input -->
   <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
@@ -9,9 +8,14 @@
 </div>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button type="button" class="delete" title="delete hero" (click)="delete(hero)">x</button>
+    <div class="d-flex align-items-stretch">
+      <div class="flex-grow-1">
+        <a routerLink="/detail/{{hero.id}}">
+          <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </a>
+      </div>
+      <button type="button" class="delete px-2" title="delete hero" (click)="delete(hero)"><i
+          class="bi bi-trash-fill"></i></button>
+    </div>
   </li>
 </ul>

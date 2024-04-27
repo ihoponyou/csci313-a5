@@ -4,75 +4,39 @@
   width: 15em;
 }
 
-input {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .heroes li {
   position: relative;
   cursor: pointer;
+  margin: 4px;
 }
 
 .heroes li:hover {
-  left: .1em;
+  left: .2em;
 }
 
 .heroes a {
   color: #333;
   text-decoration: none;
   background-color: #EEE;
-  height: 1.6em;
   border-radius: 4px;
-  display: block;
+  padding: 0;
   width: 100%;
 }
 
-.heroes a:hover {
-  color: #2c3a41;
-  background-color: #e6e6e6;
-}
-
-.heroes a:active {
-  background-color: #525252;
-  color: #fafafa;
-}
-
 .heroes .badge {
-  display: inline-block;
   font-size: small;
   color: white;
   background-color: #405061;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  min-width: 16px;
   text-align: right;
   border-radius: 4px 0 0 4px;
+  margin-left: -4px;
 }
 
-.add-button {
-  font-size: 1rem;
+.heroes .delete {
+  padding: 0;
+  margin-left: -8px;
 }
 
-.add-button:hover {
-  color: white;
-  background-color: #42545C;
-}
-
-button.delete {
-  position: absolute;
-  left: 210px;
-  top: 5px;
-  background-color: white;
-  color: #525252;
-  font-size: 1.1rem;
-}
-
-button.delete:hover {
-  background-color: #525252;
-  color: white;
+.delete:hover {
+  background-color: rgb(166, 0, 0);
 }
