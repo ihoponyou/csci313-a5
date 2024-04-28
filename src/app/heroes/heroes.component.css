@@ -1,4 +1,9 @@
 /* HeroesComponent's private CSS styles */
+
+h2 {
+  text-align: center;
+}
+
 .heroes {
   list-style-type: none;
   width: 15em;
@@ -19,7 +24,6 @@
   text-decoration: none;
   background-color: #EEE;
   border-radius: 4px;
-  padding: 0;
   width: 100%;
 }
 
@@ -30,6 +34,10 @@
   text-align: right;
   border-radius: 4px 0 0 4px;
   margin-left: -4px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: -4px;
+  margin-bottom: -4px;
 }
 
 .heroes .delete {

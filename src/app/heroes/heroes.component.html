@@ -1,12 +1,12 @@
-<div>
+<h2>Hero Catalog</h2>
+<div class="text-center my-3">
   <input id="new-hero" #heroName placeholder="Hero name" />
-
   <!-- (click) passes input value to add() and then clears the input -->
-  <button type="button" class="add-button" (click)="add(heroName.value); heroName.value=''">
+  <button type="button" class="add-button mx-1" (click)="add(heroName.value); heroName.value=''">
     Add hero
   </button>
 </div>
-<ul class="heroes">
+<div class="heroes">
   <li *ngFor="let hero of heroes">
     <div class="d-flex align-items-stretch">
       <div class="flex-grow-1">
@@ -18,4 +18,4 @@
           class="bi bi-trash-fill"></i></button>
     </div>
   </li>
-</ul>
+</div>
