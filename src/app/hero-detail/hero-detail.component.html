@@ -1,20 +1,30 @@
 <div *ngIf="hero; else no_hero">
 
     <h2>{{hero.name | uppercase}}</h2>
+
     <div>
         <span>ID: </span> {{hero.id}}
     </div>
+
     <div>
         <span for="hero-name">Name: </span>
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
     </div>
-    <button type="button" (click)="save()">Save <i class="bi bi-floppy2-fill"></i></button>
+
+    <br>
+
     <button type="button" (click)="goBack()">Back</button>
+    <button type="button" (click)="save()">Save</button>
 
 </div>
 
 <ng-template #no_hero>
-    <h2>Hero 404</h2>
+    <h2>HERO 404</h2>
+    
+    <br>
     <p>Sorry! No hero found.</p>
+
+    <br>
+
     <button type="button" (click)="goBack()">Back</button>
 </ng-template>

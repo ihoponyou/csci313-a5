@@ -1,7 +1,6 @@
 <h2>Hero Catalog</h2>
 <div class="text-center my-3">
   <input id="new-hero" #heroName placeholder="Hero name" />
-  <!-- (click) passes input value to add() and then clears the input -->
   <button type="button" class="add-button mx-1" (click)="add(heroName.value); heroName.value=''">
     Add hero
   </button>
@@ -14,8 +13,9 @@
           <span class="badge">{{hero.id}}</span> {{hero.name}}
         </a>
       </div>
-      <button type="button" class="delete px-2" title="delete hero" (click)="delete(hero)"><i
-          class="bi bi-trash-fill"></i></button>
+      <button type="button" class="delete px-2" title="delete hero" (click)="delete(hero)">
+        <i class="bi bi-trash-fill"></i>
+      </button>
     </div>
   </li>
 </div>

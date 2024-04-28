@@ -1,16 +1,14 @@
 /* HeroSearch private styles */
 
 label {
-  display: block;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 input {
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
   box-sizing: border-box;
-  display: block;
 }
 
 input:focus {
@@ -27,10 +25,13 @@ li {
   border-right: 1px solid gray;
   display: inline-block;
   width: 100%;
-  max-width: 600px;
+  max-width: 300px;
+  text-align: start;
   box-sizing: border-box;
   text-decoration: none;
   color: black;
+  background-color: #e8e8e8;
+  border-radius: 0;
 }
 
 .search-result li a:hover {
